@@ -1,0 +1,25 @@
+import { createContext, useState, useContext } from "react";
+
+const NameContext = createContext(); //1
+
+const NameProvider = ({ children }) => {
+  const [currentUser, setCurrentUser] = useState({fname:"", lname:"", email:"", id:""});
+  const [isLogged, setIsLogged] = useState(false) 
+  const serverURL = "https://urlshortner-be-xvli.onrender.com";
+  
+
+  return (
+    // second step
+    <NameContext.Provider 
+      value={{ currentUser, setCurrentUser, isLogged, setIsLogged, serverURL }}
+    >
+      {children}
+    </NameContext.Provider>
+  );
+};
+
+ const useGlobalContext = () => {
+    return useContext(NameContext);
+  };
+  
+  export { NameContext, NameProvider, useGlobalContext };
