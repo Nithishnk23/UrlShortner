@@ -30,7 +30,7 @@ Backend Deployed link - https://urlshortner-be-xvli.onrender.com
 ## Tools used
 
  <div align="left">
-  <img src="https://cdn.simpleicons.org/visualstudiocode/007ACC" height="40" alt="vscode logo"  />
+  <img src="https://raw.githubusercontent.com/vscode-icons/vscode-icons/master/images/logo@3x.png" height="40" alt="vscode logo"  />
   <img width="12" />
   <img src="https://cdn.simpleicons.org/git/F05032" height="40" alt="git logo"  />
   <img width="12" />
